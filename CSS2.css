@@ -1,0 +1,34 @@
+
+p{
+	color: #FF0000;
+	background-color: grey;
+}
+
+p{
+	color: white;
+	font-family: times-new-roman;
+	font-size: 21px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 0.25em;
+	line-height: 1.5em;
+	word-spacing: 0.5em;
+}
+
+
+
+
+h1,h2,h3{
+	background-color: green;
+	color: white;
+}
+
+body{
+	
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	text-align: center;
+}
