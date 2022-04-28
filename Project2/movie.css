@@ -1,0 +1,140 @@
+* {
+	
+}
+
+body{
+	background-image: url("images/background.png");
+	font-size: 8pt;
+	font-family: "verdana", "Tahoma", sans-serif;
+	margin:0;
+	padding: 0;
+}
+
+.banner{
+	background-image: url("images/bannerbg.png");
+	background-size: 50px 50px;
+	background-repeat:repeat:-x;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+	font-weight: bold;
+	font-family: "verdana", "Tahoma", sans-serif;
+	text-shadow: 3px 3px #999999;
+	font-size: 24pt;
+}
+
+.content{
+	width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.content .ov{
+	float: right;
+	width: 250px;
+	background-color: #A2B964;
+	z-index: 3;
+}
+
+.content .ov-image{
+	
+}
+
+.content .ov dl{
+}
+
+.content .under-ov{
+	font-size: 8pt;
+	font-family: "Arial", sans-serif;
+	margin: 0 10pt;
+}
+
+.content .under-ov dt{
+	margin-top: 10pt;
+	font-weight: bold;
+}
+
+.content .under-ov ul{
+	list-style-type: none;
+	padding: 0;
+}
+.content .under-ov li a{
+	
+}
+
+.content .reviews{
+	width: 550px;
+}
+
+.reviews .rotten-image{
+	background-image: url("images/rgb.png");
+	background-repeat: x-repeat;
+	color: red;
+	font-weight: bold;
+	font-size: 48px;
+	vertical-align: middle;
+}
+
+.reviews .rotten-image img{
+	vertical-align: -40%;
+}
+
+.reviews-content{
+	column-count: 2;
+	margin: 2%;
+}
+
+.content-column1{
+}
+
+.content-column2{
+}
+
+.reviews-content p:nth-child(odd){
+	font-size: 8pt;
+	font-weight: bold;
+	border: 2px solid gray;
+	border-radius: 10px;
+	background-color: #E8DC9B;
+	padding: 8px;
+	clear: both;
+	overflow: hidden;
+	margin-top: 0;
+}
+
+.reviews-content p:nth-child(odd) img{
+	float: left;
+	vertical-align: middle;
+}
+
+.reviews-content p:nth-child(odd) q{
+}
+
+.reviews-content p:nth-child(even){
+	margin-bottom: 20pt;
+	font-style: italic;
+}
+
+.reviews-content p:nth-child(even) img{
+	float: left;
+	margin-right: 5px;
+}
+
+.reviews-content p img{
+	margin-right: 5px;
+}
+
+footer{
+	position: relative;
+	clear: right;
+	padding: 5px;
+	background-color: #A2B964;
+	width: 100%;
+	text-align: center;
+	z-index: -1;
+}
