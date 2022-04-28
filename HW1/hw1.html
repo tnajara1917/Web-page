@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Homework 1 - Tyler Najara </title>
+	</head>
+	
+	
+	<body>
+		<h1> Homework 1 - Tyler Najara </h1>
+		<h2> This goal of this assignment to summarize many of the things I have learned so far in the course.</h2>
+		<h3> Phrasing, Anchors, Tables, Block Quotations, Entities, etc.</h3>
+		<hr/>
+		 <p>HERE'S A RANDOM PICTURE OF ME (using "img src"): </p>
+		 <img src="images/tyler.jpg" alt="ME!">
+		<p><strong>SUMMARY:</strong></p>
+		<p> </p>
+		
+		<p> We begun our 1st meeting with a brief introduction to HTML and how we could build up webpages from scratch.</p> 
+		<p> This page that you are basically reading right now was totally made solely with HTML aspects and components within Notepad++. </p>
+		<p> Even the page that you saw before also known as my "index". It was also made using HTML only.</p>
+		<p> We've learned very much from basic format of HTMl, to headers, to different uses like horizontal rule that creates a line of seperation.</p>
+		<p> An example of this is above "SUMMARY" and it is used with "hr" within parameters.</p>
+		<p> We also learned how to include images within our webpages like the manhattan jasper logo on my homepage. </p>
+		<p> I'd like to be able to say much more about what we have learned but I thought it'd be easier to show some features that I thought were pretty interesting. </p>
+		<br>
+		<p> THIS line is isolated with the use of LINE BREAKS using "br". This creates ALOT of space!
+			Also keeps the page clean and not cluttered </p>
+		<br>
+		<p> By the way, if you don't know what HTML stands for it means: </p>
+		<p><strong>"HYPERTEXT MARKUP LANGUAGE"</strong></p>
+		
+		<p> Now with the using of phrasing elements specifically "strong". I was able to not only just emphasize it but it also got bold font on it's own. </p>
+		<hr/>	
+		<p> Lists are something that we learned as well, here is one made of my favorite movies: </p>
+		<ul>
+			<li>Fight Club</li>
+			<li>Scarface</li>
+			<li>Akira</li>
+			<li>Scott Pilgrim vs. The World</li>
+			<li>Superbad</li>
+			<li>1917</li>
+			<li>Inception</li>
+		</ul>
+		
+		<hr/>
+		<p> We always wondered how we click some words in articles and it takes us to a totally new page.</p>
+		<p> This is because we are anchoring a link into a specific word, in this case "Homepage"... go ahead and click it.</p> 
+		<p>Go back to the <a href = "https://turing.manhattan.edu/~tnajara01/index.html" title="Back to home page" >Homepage</a> using this!</p>
+		<br>
+		<p> FUN FACT: You can embed these same links on to images as well!! Click the JASPER Logo on my homepage!
+		<br>
+		<p> Moving on... As you can see I created a table below: </p>
+		<table>
+			<caption><strong>Tyler's "Must-Invests"</strong></caption>
+			<tr><th>Companies</th><th>Crypto</th></tr>
+			<tr><td>AMD</td><td>Bitcoin</td></tr>
+			<tr><td>Tesla</td><td>Ethereum</td></tr>
+			<tr><td>Nvidia</td><td>Solana</td></tr>
+			<tr><td>Google</td><td>Shiba Inu</td></tr>
+			<tr><td>Apple</td><td>Dogecoin</td></tr>
+		</table>
+		
+		<hr/>
+		<p>We also learned about block quotations, here are some quotes I decided to put down: </p> 
+			<blockquote>
+			<p>"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela</p>
+			</blockquote>
+			
+			<blockquote>
+			<p>"It is during our darkest moments that we must focus to see the light." -Aristotle</p>
+			</blockquote>
+			
+			<blockquote>
+			<p>“Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.” -Will Ferrell</p>
+			</blockquote>
+		
+		<hr/>
+		<p> We also learned how to put in some code so check this out: </p>
+		<p> (I did not write this code but it's a C++ code for Rock Paper Scissors!)</p>
+		<p>
+		<pre><code>
+		#include <iostream>
+ 
+// Constant variables
+const char ROCK = 'r';
+const char PAPER = 'p';
+const char SCISSORS = 's';
+ 
+using namespace std;
+ 
+char getComputerOption() {
+    srand(time(0));
+    // Random number
+    int num = rand() % 3 + 1;
+ 
+    if(num==1) return 'r';
+    if(num==2) return 'p';
+    if(num==3) return 's';
+}
+ 
+char getUserOption() {
+    char c;
+    cout << "Rock, Paper and Scissors Game!" << endl;
+    cout << "Choose one of the following options"  << endl;
+    cout << "-----------------------------------"  << endl;
+    cout << "(r) for rock " << endl << "(p) for paper" << endl << "(s) for scissors " << endl;
+    cin >> c;
+    
+    while (c!='r' && c!='p' && c!='s' )
+    {
+        cout << "Please enter one of the following options only. " << endl;
+        cout << "(r) for rock " << endl << "(p) for paper" << endl << "(s) for scissors " << endl;
+        cin >> c;
+    }
+ 
+    return c;
+}
+ 
+void showSelectedOption(char option) {
+    if (option == 'r') cout << "Rock" << endl;
+    if (option == 'p') cout << "Paper" << endl;
+    if (option == 's') cout << "Scissors" << endl;
+}
+ 
+void chooseWinner(char uChoice, char cChoice) {
+    if (uChoice == ROCK && cChoice == PAPER) {
+        cout << "Computer Wins! Paper wraps Rock."<< endl;
+    }
+    else if (uChoice == PAPER && cChoice == SCISSORS) {
+        cout << "Computer Wins! Scissors cut Paper."<< endl;
+        
+    }
+    else if (uChoice == SCISSORS && cChoice == ROCK) {
+        cout << "Computer Wins! Rock smashes Scissors."<< endl;
+        
+    }
+    else if (uChoice == ROCK && cChoice == SCISSORS) {
+        cout << "You Win! Paper wraps Rock."<< endl;
+        
+    }
+    else if (uChoice == PAPER && cChoice == ROCK) {
+        cout << "You Win! Paper wraps Rock."<< endl;
+        
+    }
+    else if (uChoice == SCISSORS && cChoice == PAPER) {
+        cout << "You Win! Scissors cut Paper."<< endl;
+    }
+    else{
+        cout << "Tie. Play again win the Game." << endl;
+    }
+}
+ 
+int main() {
+    //User's choice
+    char uChoice; 
+    //Compter's choice
+    char cChoice;
+    
+    uChoice = getUserOption();
+    cout << "Your choice is: "<< endl;
+    showSelectedOption(uChoice);
+    
+    cout << "Computer's choice is: "<< endl;
+    cChoice = getComputerOption();
+    showSelectedOption(cChoice);
+    
+    chooseWinner(uChoice, cChoice);
+ 
+    return 0;
+}
+</code></pre>
+</p>
+		<hr/>
+		
+		<p>Something I thought was super cool was the idea to embed some audio or video into my page.</p>
+		<p>Here is my favorite song at the moment:</p>
+		<p><audio src = "music/yeat.mp3" controls = "controls"> </audio> </p>
+		
+	</body>
+</html> 
