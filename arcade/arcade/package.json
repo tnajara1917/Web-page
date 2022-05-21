@@ -1,0 +1,23 @@
+{
+  "name": "arcade",
+  "version": "1.0.0",
+  "description": "web programming final project\r https://firebase.google.com/docs/web/setup\r https://thearcade-7889e-default-rtdb.firebaseio.com/\r https://firebase.google.com/docs/database/admin/retrieve-data#node.js",
+  "main": "functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcarrier12/arcade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcarrier12/arcade/issues"
+  },
+  "homepage": "https://github.com/jcarrier12/arcade#readme",
+  "dependencies": {
+    "firebase": "^9.8.1"
+  }
+}

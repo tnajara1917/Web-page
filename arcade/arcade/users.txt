@@ -1,0 +1,2 @@
+username;email;password;gender;favorite_console;0;
+probs;jcarrier01@manhattan.edu;123;M;Nintendo;0;
